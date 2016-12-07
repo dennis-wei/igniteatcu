@@ -2206,6 +2206,21 @@ a.sr-buttonicon.small-iconbutton {
 .sr-buttonicon .fa-angle-down { left: 2px; top: 0px; position:relative; }
 
 .xone { color: #4da5f5; }
+
+.landing {
+    background-image: url(../uploads/landing_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-lander-text {
+	padding: 35vh;
+	top: 50%;
+	left: 50%;
+}
 	
 /*	parallax bg sections
 ------------------------------------------------*/
