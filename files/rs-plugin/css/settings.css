@@ -266,7 +266,7 @@ text-shadow:none;
 }
 
 .tp-caption a {
-color:#ff7302;
+color:#ffffff;
 text-shadow:none;
 -webkit-transition:all 0.2s ease-out;
 -moz-transition:all 0.2s ease-out;
@@ -275,7 +275,7 @@ text-shadow:none;
 }
 
 .tp-caption a:hover {
-color:#ffa902;
+color:#ffffff;
 }
 
 .tp-caption.thinheadline_dark {
@@ -1451,17 +1451,36 @@ zoom: 1;
 
 
 /* Custom Captions*/
-.srcaption-bigwhite, .srcaption-mediumwhite, .srcaption-smallwhite, .srcaption-miniwhite {
-	font-family: 'Raleway'; 
+@font-face {
+	font-family: 'Aelerons';
+	src: url(../../fonts/Ailerons.ttf);
+}
+
+@font-face {
+	font-family: 'montserrat';
+	src: url(../../fonts/montserrat/Montserrat-Thin.otf);
+}
+
+.srcaption-bigwhite{
+	font-family: 'Aelerons'; 
 	font-weight: 400;
 	color: #ffffff;
-	font-size: 100px;
+	font-size: 7em;
+	line-height: 120px;
+	}
+
+.srcaption-mediumwhite, .srcaption-smallwhite, .srcaption-smallerwhite, .srcaption-miniwhite {
+	font-family: 'montserrat'; 
+	font-weight: 300;
+	color: #ffffff;
+	font-size: 7em;
 	line-height: 120px;
 	}
 	
 .srcaption-mediumwhite { font-size: 50px; line-height: 60px; }
 .srcaption-smallwhite { font-size: 32px; line-height: 42px; }
-.srcaption-miniwhite { font-size: 18px; line-height: 26px; }
+.srcaption-smallerwhite { font-size: 20px; line-height: 30px; }
+.srcaption-miniwhite { font-size: 14px; line-height: 26px; }
 	
 .tp-caption strong, tp-caption b  { font-weight: 900; }
 .srcaption-miniwhite strong { font-weight: 600; }

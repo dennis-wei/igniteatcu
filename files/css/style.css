@@ -89,14 +89,14 @@ html {
 	}
 
 body {
-	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 	font-weight: 300;
 	font-size:14px; 
 	line-height: 22px;
 	color:#666666; 
 	text-align: left; 
 	position: relative;
-	background: #fafafa;
+	background: #ffffff;
 	height: 100%;
 	}
 ::selection { background:#ffe49c; color:#262626; }
@@ -139,8 +139,7 @@ div h1:first-child, div h2:first-child, div h3:first-child, div h4:first-child, 
 	}
 	
 .section-title h2 { 
-	text-transform: uppercase;
-	letter-spacing: -0.05em;
+	text-transform: none;
 	font-weight: 900;  
 	}
 	
@@ -153,7 +152,7 @@ div h1:first-child, div h2:first-child, div h3:first-child, div h4:first-child, 
 /* Forms
 ---------------------------------------- */
 input[type=text], input[type=password], input[type=email], textarea {
-	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 	font-weight: 400;
 	font-size: 12px;
 	background: #ffffff;
@@ -184,7 +183,7 @@ textarea { width: 1100px; height: 150px; max-width: 97%; padding: 11px 4px 8px 4
 .one-half textarea { width: 520px; }
 
 input[type=submit] {
-	font-family: 'Open Sans';
+	font-family: 'Montserrat';
 	font-weight: 600;
 	font-size: 13px; 
 	line-height: 22px ;
@@ -277,7 +276,7 @@ div form:first-child, form .form-row:first-child 	 {
 ---------------------------------------- */
 a {
 	text-decoration: none;
-	color: #4da5f5;
+	color: #ffffff;
 	cursor: pointer;
 	-webkit-tap-highlight-color:rgba(0,0,0,0.0);
 	}
@@ -459,7 +458,7 @@ aside {
 3. HEADER
 ------------------------------------------------*/
 header {
-	background: #ffffff;
+	background: #363441;
 	box-shadow:  rgba(0,0,0, 0.2) 0px 0px 3px;
 	-moz-box-shadow:  rgba(0,0,0, 0.2) 0px 0px 3px;
 	-webkit-box-shadow:  rgba(0,0,0, 0.2) 0px 0px 3px;
@@ -483,7 +482,22 @@ header {
 #logo img {
 	max-height: 100%;
 	}
-	
+
+@font-face {
+	font-family: 'montserrat';
+	src: url(../fonts/monsterrat/Montserrat-Light.otf);
+}
+
+@font-face {
+	font-family: 'nexa-light';
+	src: url(../fonts/NexaLight.otf);
+}
+
+@font-face {
+	font-family: 'nexa-bold';
+	src: url(../fonts/NexaBold.otf);
+}
+
 	
 /* header shrinks when fixed & scrolled */	
 .fixed-header header {
@@ -564,20 +578,14 @@ header.header-overlay #defaut-logo {
 5. FOOTER
 ------------------------------------------------*/
 footer {
-	background: #262626;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	background: #363441;
 	}
 	
 .footer-logo img {
-	height: 60px;
+	height: 50px;
 	}
-	
-
-footer .copyright {
-	font-size: 13px;
-	color: #cccccc;
-	}
-	
-	
 
 /*---------------------------------------------- 
 6. NAVIGATION & MENU
@@ -609,11 +617,11 @@ nav#main-nav ul li {
 
 nav#main-nav > ul > li > a  {
 	display: block;
-	font-family: 'Open Sans'; 
+	font-family: 'nexa-light'; 
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 60px;					/* depending on the logo height */
-	color: #262626;
+	color: #ffffff;
 	text-decoration: none;
 	text-transform: uppercase;
 	position: relative;
@@ -633,11 +641,11 @@ nav#main-nav > ul > li > a  {
 		
 nav#main-nav > ul > li:hover > a {
 	z-index: 48;
-	color: #4da5f5;
+	color: #FF412A;
 	}
 	
 nav#main-nav > ul > li.current-menu-item > a, nav#main-nav > ul > li.current-menu-ancestor > a {
-	color: #4da5f5;
+	color: #FF412A;
 	}
 
 /* hover/active nav state for overlayed header*/	
@@ -666,7 +674,7 @@ nav#main-nav ul .sub-menu li {
 	}
 	
 nav#main-nav ul .sub-menu li a {
-	font-family: 'Open Sans'; 
+	font-family: 'Montserrat'; 
 	font-weight: 400;
 	color: #999999;
 	font-size: 12px;
@@ -754,7 +762,7 @@ nav#menu-controls > ul > li a:hover span.c-dot  {
 	
 nav#menu-controls > ul > li a span.c-name  {
 	position: absolute;
-	font-family: 'Open Sans';
+	font-family: 'Montserrat';
 	font-weight: 400;
 	font-size: 10px;
 	text-transform: uppercase;
@@ -791,7 +799,7 @@ nav#menu-controls > ul > li a:hover span.c-name {
 	display: block;
 	width: 40px;
 	height: 40px;
-	background: url(../images/sprites.png) -340px 0 no-repeat;
+	background: url(../images/sprites.png) -370px 0 no-repeat;
 	}
 .header-overlay .open-responsive-nav span { background-position: -370px 0 ; }
 
@@ -830,7 +838,7 @@ nav#responsive-nav ul li {
 nav#responsive-nav > ul li > a {
 	display: block;
 	color: #cccccc;
-	font-family: 'Open Sans'; 
+	font-family: 'Montserrat'; 
 	font-weight: 600;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -883,11 +891,14 @@ nav#responsive-nav .sub-menu li a {
 section { }
 
 .section-inner { padding-top: 100px; }
-.no-padding .section-inner {	padding-top: 0px; }
+.no-padding .section-inner {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
 
 .horizontalsection .horizontalinner {
 	padding: 100px 0;
-	}
+}
 
 
 
@@ -1124,7 +1135,7 @@ section { }
 	
 .blog-date .date-day {
 	display: block;
-	font-family: 'Open Sans'; 
+	font-family: 'Montserrat'; 
 	font-weight: 800;
 	font-size: 60px;
 	line-height: 50px;
@@ -1133,7 +1144,7 @@ section { }
 	
 .blog-date .date-month {
 	display: block;
-	font-family: 'Open Sans'; 
+	font-family: 'Montserrat'; 
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 14px;
@@ -1397,11 +1408,11 @@ aside .column { width: 100% !important; float: none !important; margin-right: 0 
 ------------------------------------------------*/
 a.sr-button {
 	display: inline-block;
-	font-family: 'Open Sans';
+	font-family: 'Montserrat';
 	font-weight: 600;
 	line-height: 22px !important;
 	letter-spacing: 0.15em; 
-	text-transform: uppercase;
+	text-transform: none;
 	text-align: center;
 	margin-bottom: 5px;
 	border-radius: 3px;
@@ -1426,13 +1437,13 @@ a.sr-button:hover {
 a.mini-button { font-size: 10px; padding: 5px 10px; border-radius: 2px;-moz-border-radius:2px;-khtml-border-radius:2px;-webkit-border-radius:2px; }
 a.small-button { font-size: 11px; padding: 10px 20px; }
 a.medium-button { font-size: 13px; padding: 12px 40px; }
-a.big-button { font-size: 15px;	padding: 18px 50px;	}
+a.big-button { font-size: 15px;	padding: 18px 75px;	}
 
 a.sr-button1 {	border: 2px solid #999999; color: #262626;	background: transparent; }
 a.sr-button1:hover { border-color: #262626; background-color: #262626; color: #ffffff; }
 
-a.sr-button2 {	border: 2px solid #262626; color: #262626;	background: transparent; }
-a.sr-button2:hover { background-color: #1a1a1a; color: #ffffff; }
+a.sr-button2 {	border: 8px solid #FF412A; color: #ffffff;	background: #363441; }
+a.sr-button2:hover { background-color: #ff412a; color: #ffffff; }
 
 a.sr-button3 { border: 2px solid #4da5f5; color: #4da5f5;	background: transparent; }
 a.sr-button3:hover { background: #4da5f5; color: #ffffff; }
@@ -1535,7 +1546,7 @@ a.sr-buttonicon.small-iconbutton {
 	}
 	
 .counter-value {
-	font-family: 'Open Sans'; 
+	font-family: 'Montserrat'; 
 	font-weight: 800;
 	font-size: 48px;
 	line-height: 60px;
@@ -1854,7 +1865,7 @@ a.sr-buttonicon.small-iconbutton {
 	
 .price-amount {
 	display: block;
-	font-family: 'Open Sans'; 
+	font-family: 'Montserrat'; 
 	font-weight: 800;
 	font-size: 70px;
 	line-height: 70px;
@@ -1865,7 +1876,7 @@ a.sr-buttonicon.small-iconbutton {
 .price-time {
 	margin-top: 10px;
 	display: block;
-	font-family: 'Open Sans'; 
+	font-family: 'Montserrat'; 
 	font-weight: 600;
 	font-size: 12px;
 	line-height: 14px;
@@ -2207,30 +2218,18 @@ a.sr-buttonicon.small-iconbutton {
 
 .xone { color: #4da5f5; }
 
-.landing {
-    background-image: url(../uploads/landing_bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    width: 100%;
-    height: 100vh;
+.bg-img {
+	width: 100%;
 }
 
-.main-lander-text {
-	padding: 35vh;
-	top: 50%;
-	left: 50%;
+.space-grad {
+	background: #363441; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#363442, #4F7FDD); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#363442, #4F7FDD); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#363442, #4F7FDD); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#363442, #4F7FDD); /* Standard syntax */
 }
-	
-/*	parallax bg sections
-------------------------------------------------*/
-#facts.parallax-section { background:url(../uploads/parallax-bg1.jpg) center center repeat; background-size: cover; } /* index */
-#testimonials.parallax-section { background:url(../uploads/parallax-bg2.jpg) center center repeat; background-size: cover; } /* index */
-#passionate.parallax-section { background:url(../uploads/parallax-bg3.jpg) center center repeat; background-size: cover; } /* index */
-#purchase.parallax-section { background:url(../uploads/parallax-bg3.jpg) center center repeat; background-size: cover; } /* index-headeroverlay */
-#quote.parallax-section { background:url(../uploads/parallax-bg3.jpg) center center repeat; background-size: cover; } /* index-headeroverlay*/
 
 /*	dark bg sections
 ------------------------------------------------*/
 .service-dark { background:#262626; } /* index-videobg */
-#see-portfolio { background: #4da5f5; } /* index-videobg */
